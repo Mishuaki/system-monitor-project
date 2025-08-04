@@ -12,11 +12,11 @@ A simple PowerShell script that monitors key system resources (CPU usage, memory
 
 # Project Structure
 
-<pre> ```system-monitor-project/
+<pre> system-monitor-project/
 ├── logs/
 │   └── system_log.txt # Output log file
-├── monitor.ps1 # Main PowerShell script for system monitoring
-└── README.md # Project documentation```
+├── monitor.ps1        # Main PowerShell script for system monitoring
+└── README.md          # Project documentation
 </pre>
 
 # How to Use
@@ -29,11 +29,11 @@ A simple PowerShell script that monitors key system resources (CPU usage, memory
 4. Check the logs/system_log.txt file for system info.
 
 # Sample Output
-<pre> ```[2025-08-04 20:50:48]
+<pre> [2025-08-04 20:50:48]
 CPU Load        : 9%
 Memory Usage    : 3.43 GB / 3.88 GB
 Disk Free Space : 108.67 GB / 272.53 GB
------------------------------------------------```
+-----------------------------------------------
 </pre>
 
 # Future Improvements
