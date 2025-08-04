@@ -13,8 +13,8 @@ A simple PowerShell script that monitors key system resources (CPU usage, memory
 # Project Structure
 system-monitor-project/
 ├── logs/
-│ └── system_log.txt # Output log file
-├── monitor.ps1 # Main PowerShell script
+│   └── system_log.txt # Output log file
+├── monitor.ps1 # Main PowerShell script for system monitoring
 └── README.md # Project documentation
 
 # How to Use
