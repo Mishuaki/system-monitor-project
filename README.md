@@ -4,11 +4,10 @@ A simple PowerShell script that monitors key system resources (CPU usage, memory
 
 # Features
 
-- Retrieves current CPU load percentage
-- Calculates used and total physical memory
+- Retrieves current CPU load percentage.
+- Calculates used and total physical memory.
 - Displays available disk space on drive C:
 - Logs the data in `logs/system_log.txt`
-- Can be run manually or scheduled via Task Scheduler
 
 # Project Structure
 
