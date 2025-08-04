@@ -24,7 +24,7 @@ A simple PowerShell script that monitors key system resources (CPU usage, memory
 1. Clone or download this repository.
 2. Open the folder in VS Code.
 3. Run the script using the built-in terminal:
-   ` ` `powershell
+   ``` powershell
    .\monitor.ps1
 4. Check the logs/system_log.txt file for system info.
 
