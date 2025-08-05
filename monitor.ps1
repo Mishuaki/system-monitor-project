@@ -1,5 +1,9 @@
 # monitor.ps1 - System Health Monitor Script
 
+# === Thresholds ===
+$cpuThreshold = 80      # Alert if CPU is above 80%
+$ramThreshold = 85      # Alert if RAM usage is above 85%
+
 # 1. Get the current date and time
 $date = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
@@ -12,6 +16,15 @@ $cpu = Get-WmiObject win32_processor |
 $mem = Get-WmiObject Win32_OperatingSystem
 $usedMem = [math]::Round(($mem.TotalVisibleMemorySize - $mem.FreePhysicalMemory) / 1MB, 2)
 $totalMem = [math]::Round($mem.TotalVisibleMemorySize / 1MB, 2)
+
+# === Check Thresholds ===
+if ($cpuLoad -gt $cpuThreshold) {
+    Write-Host "⚠️  WARNING: CPU usage is high: $cpuLoad%" -ForegroundColor Red
+}
+
+if ($usedMemoryPercent -gt $ramThreshold) {
+    Write-Host "⚠️  WARNING: Memory usage is high: $usedMemoryPercent%" -ForegroundColor Red
+}
 
 # 4. Get disk space info (Drive C:)
 $disk = Get-WmiObject Win32_LogicalDisk -Filter "DeviceID='C:'"
