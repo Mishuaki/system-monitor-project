@@ -1,6 +1,6 @@
 # monitor.ps1 - System Health Monitor Script
 
-# === Thresholds ===
+# Thresholds
 $cpuThreshold = 80      # Alert if CPU is above 80%
 $ramThreshold = 85      # Alert if RAM usage is above 85%
 
@@ -17,7 +17,7 @@ $mem = Get-WmiObject Win32_OperatingSystem
 $usedMem = [math]::Round(($mem.TotalVisibleMemorySize - $mem.FreePhysicalMemory) / 1MB, 2)
 $totalMem = [math]::Round($mem.TotalVisibleMemorySize / 1MB, 2)
 
-# === Check Thresholds ===
+# Threshold Alerts
 if ($cpuLoad -gt $cpuThreshold) {
     Write-Host "⚠️  WARNING: CPU usage is high: $cpuLoad%" -ForegroundColor Red
 }
