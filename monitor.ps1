@@ -3,8 +3,8 @@
 Add-Type -AssemblyName System.Windows.Forms
 
 # Thresholds
-$cpuThreshold = 10    # Alert if CPU is above 10%
-$ramThreshold = 10    # Alert if RAM usage is above 10%
+$cpuThreshold = 80  # Alert if CPU is above 10%
+$ramThreshold = 90  # Alert if RAM usage is above 10%
 
 # 1. Get the current date and time
 $date = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
