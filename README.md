@@ -14,6 +14,7 @@ A simple PowerShell script that monitors key system resources (CPU usage, memory
 ├── logs/
 │   └── system_log.txt # Output log file
 ├── monitor.ps1        # Main PowerShell script for system monitoring
+|__ monitor_gui.ps1    # PowerShell script that shows GUI dashboard
 └── README.md          # Project documentation
 </pre>
 
@@ -41,7 +42,6 @@ Disk Free Space : 108.67 GB / 272.53 GB
 # Future Improvements
 - Email notifications
 - Export logs to a CSV or HTML dashboard
-- GUI Dashboard
 - Add scheduled automation
 
 # Why This Matters
