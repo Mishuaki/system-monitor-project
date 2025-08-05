@@ -39,7 +39,7 @@ Disk Free Space : 108.67 GB / 272.53 GB
 </pre>
 
 # Future Improvements
-- Email or popup notifications
+- Email notifications
 - Export logs to a CSV or HTML dashboard
 - GUI Dashboard
 - Add scheduled automation
